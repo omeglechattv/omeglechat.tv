@@ -244,3 +244,74 @@ footer {
     font-size: 1.5rem;
     color: #fd267a;
 }
+
+/* First Date Ideas Page */
+.first-date-ideas {
+    padding: 50px 20px;
+}
+
+.first-date-ideas .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    color: #333;
+}
+
+.first-date-ideas h2 {
+    color: #fd267a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.date-block {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.date-block h3 {
+    color: #fd267a;
+    margin-top: 0;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #888;
+}
+
+.why {
+    background-color: #f9f9f9;
+    border-left: 4px solid #fd267a;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.faq h3, .faq h4 {
+    color: #fd267a;
+}
+
+.cta {
+    text-align: center;
+    padding: 30px;
+    background-color: #fdeff4;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+
+.cta .cta-button {
+    background: linear-gradient(to right, #fd267a, #ff6036);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 15px;
+}
