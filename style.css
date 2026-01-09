@@ -174,3 +174,53 @@ footer {
         margin-bottom: 10px;
     }
 }
+
+/* Tactics Section */
+.tactics-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.tactics-section h2 {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.tactics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+    color: #333;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #fd267a;
+}
