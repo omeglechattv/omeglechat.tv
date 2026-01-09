@@ -61,8 +61,8 @@ nav ul {
 }
 
 .cta-button {
-    background-color: #fff;
-    color: #fd267a;
+    background: linear-gradient(to right, #fd267a, #ff6036);
+    color: #fff;
     padding: 15px 30px;
     border-radius: 50px;
     font-size: 1.2rem;
@@ -92,8 +92,8 @@ nav ul {
 
 .article-card {
     background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
     color: #333;
@@ -218,8 +218,8 @@ footer {
 
 .card {
     background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -246,72 +246,119 @@ footer {
 }
 
 /* First Date Ideas Page */
-.first-date-ideas {
-    padding: 50px 20px;
+.hero {
+    background: linear-gradient(to right, #fd267a, #ff6036);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: left;
 }
-
-.first-date-ideas .container {
+.hero .wrap {
     max-width: 800px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    color: #333;
 }
-
-.first-date-ideas h2 {
-    color: #fd267a;
-    text-align: center;
-    margin-bottom: 20px;
+.hero .breadcrumbs {
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 15px;
 }
-
-.date-block {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin-bottom: 30px;
+.hero .breadcrumbs a {
+    color: #fff;
 }
-
-.date-block h3 {
-    color: #fd267a;
-    margin-top: 0;
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
-
-.subtitle {
-    font-style: italic;
-    color: #888;
+.hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
 }
-
-.why {
-    background-color: #f9f9f9;
-    border-left: 4px solid #fd267a;
-    padding: 10px;
+.meta .chip {
+    background-color: rgba(255,255,255,0.2);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-top: 10px;
+}
+.related {
     margin-top: 15px;
 }
 
-.faq h3, .faq h4 {
-    color: #fd267a;
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: -30px auto 0;
+    position: relative;
+    z-index: 2;
+    background-color: #f4f4f4;
 }
 
-.cta {
-    text-align: center;
-    padding: 30px;
-    background-color: #fdeff4;
-    border-radius: 15px;
-    margin-top: 40px;
+.section.card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    color: #333;
+}
+.section.card.pad {
+    padding: 25px;
 }
 
-.cta .cta-button {
-    background: linear-gradient(to right, #fd267a, #ff6036);
-    color: #fff;
+/* Quiz Styles */
+.quiz-q {
+    border: none;
+    margin-bottom: 20px;
+}
+.quiz-q legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.quiz label {
+    display: block;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.quiz label:hover {
+    background-color: #f0f0f0;
+}
+.quiz input[type="radio"]:checked + label {
+    border-color: #fd267a;
+    background-color: #fff;
+    font-weight: bold;
+}
+.quiz input[type="radio"] {
+    display: none;
+}
+.reset-button {
+    background-color: #fff;
+    color: #555;
+    border: 1px solid #ccc;
     padding: 15px 30px;
     border-radius: 50px;
     font-size: 1.2rem;
     font-weight: bold;
-    border: none;
     cursor: pointer;
-    display: inline-block;
-    margin-top: 15px;
+}
+
+/* Checklist */
+.checklist {
+    list-style: none;
+    padding-left: 0;
+}
+.checklist li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+.checklist li::before {
+    content: '✓';
+    color: #fd267a;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
 }
